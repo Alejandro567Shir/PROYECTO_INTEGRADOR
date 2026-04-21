@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SGT-ESPOCH Orellana</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="login-page">
+    <section class="login-card">
+      <div class="logo-circle">
+        <span class="logo-icon">📖</span>
+      </div>
+
+      <h1>SGT-ESPOCH Orellana</h1>
+      <p class="subtitle">Sistema de Gestión de Titulación</p>
+
+      <h2>Simulador de Login - Seleccione su Rol:</h2>
+
+      <div class="role-list">
+        <button class="role-item" onclick="seleccionarRol('estudiante')">
+          <div class="role-info">
+            <h3>ESTUDIANTE</h3>
+            
+          </div>
+          <span class="arrow">›</span>
+        </button>
+
+        <button class="role-item" onclick="seleccionarRol('docente_f1')">
+          <div class="role-info">
+            <h3>DOCENTE</h3>
+            
+          </div>
+          <span class="arrow">›</span>
+        </button>
+
+        <button class="role-item" onclick="seleccionarRol('director_f2')">
+          <div class="role-info">
+            <h3>DIRECTOR</h3>
+            
+          </div>
+          <span class="arrow">›</span>
+        </button>
+
+        <button class="role-item" onclick="seleccionarRol('secretaria')">
+          <div class="role-info">
+            <h3>Ing. Mariana Moposita</h3>
+            <p>SECRETARÍA</p>
+          </div>
+          <span class="arrow">›</span>
+        </button>
+
+        <button class="role-item" onclick="seleccionarRol('coordinador')">
+          <div class="role-info">
+            <h3>COORDINADOR TI</h3>
+            
+          </div>
+          <span class="arrow">›</span>
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
