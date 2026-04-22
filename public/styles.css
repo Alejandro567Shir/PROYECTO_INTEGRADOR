@@ -6,8 +6,8 @@
 
 body {
   font-family: Arial, sans-serif;
-  background: #edf1f7;
-  color: #1e2b4a;
+  background: white;        
+  color: blue;             
 }
 
 .login-page {
@@ -32,7 +32,7 @@ body {
   height: 72px;
   margin: 0 auto 18px;
   border-radius: 50%;
-  background: #2746a1;
+  background: red;       
   display: flex;
   align-items: center;
   justify-content: center;
@@ -46,18 +46,18 @@ body {
 .login-card h1 {
   font-size: 30px;
   margin-bottom: 8px;
-  color: #1b2c57;
+  color: red;              
 }
 
 .subtitle {
-  color: #6b7280;
+  color: grey;
   margin-bottom: 18px;
   font-size: 18px;
 }
 
 .login-card h2 {
   margin-bottom: 18px;
-  color: #1b2c57;
+  color: cornflowerblue;
   font-size: 22px;
 }
 
@@ -71,7 +71,7 @@ body {
 .role-item {
   width: 100%;
   border: none;
-  background: #f5f7fb;
+  background: white;         
   border-radius: 14px;
   padding: 16px 18px;
   display: flex;
@@ -83,23 +83,23 @@ body {
 }
 
 .role-item:hover {
-  background: #e8eefc;
+  background: #fde0e0;         
 }
 
 .role-info h3 {
   font-size: 17px;
   margin-bottom: 4px;
-  color: #1e2b4a;
+  color: red;
 }
 
 .role-info p {
   font-size: 14px;
-  color: #6b7280;
+  color: #b37b7b;
 }
 
 .arrow {
   font-size: 28px;
-  color: #2746a1;
+  color: #b22222;
 }
 
 #login-form {
@@ -111,14 +111,14 @@ body {
 
 #login-form input {
   padding: 15px;
-  border: 1px solid #d6dce7;
+  border: 1px solid #e2c7c7;
   border-radius: 12px;
   font-size: 16px;
   outline: none;
 }
 
 #login-form input:focus {
-  border-color: #2f69ff;
+  border-color: red;
 }
 
 .login-btn,
@@ -132,25 +132,25 @@ body {
 }
 
 .login-btn {
-  background: #2f69ff;
+  background: #b22222;        
 }
 
 .login-btn:hover {
-  background: #1e59eb;
+  background: #8b1a1a;         
 }
 
 .back-btn {
-  background: #77808b;
+  background: #a05a5a;         
 }
 
 .back-btn:hover {
-  background: #666f79;
+  background: #7a4242;
 }
 
 .mensaje-login {
   margin-top: 16px;
   font-size: 14px;
-  color: #e63946;
+  color: red;           
 }
 
 .panel {
@@ -160,7 +160,7 @@ body {
 
 .sidebar {
   width: 300px;
-  background: #071a49;
+  background: #6b0f0f;        
   color: white;
   padding: 24px 18px;
   display: flex;
@@ -175,7 +175,7 @@ body {
 }
 
 .user-box {
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.12);
   padding: 18px;
   border-radius: 14px;
   display: flex;
@@ -186,7 +186,7 @@ body {
 .menu-btn,
 .logout-btn,
 table button {
-  background: #2f69ff;
+  background: #b22222;        
   color: white;
   border: none;
   padding: 12px 14px;
@@ -196,7 +196,7 @@ table button {
 
 .logout-btn {
   margin-top: auto;
-  background: #102a63;
+  background: #4a0e0e;        
 }
 
 .content {
@@ -207,6 +207,7 @@ table button {
 .content h1 {
   margin-bottom: 24px;
   font-size: 24px;
+  color: red;
 }
 
 .card {
@@ -229,6 +230,7 @@ table button {
   padding: 20px;
   border-radius: 14px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+  color: black;
 }
 
 table {
@@ -240,7 +242,11 @@ th,
 td {
   padding: 16px 12px;
   text-align: left;
-  border-bottom: 1px solid #e7e7e7;
+  border-bottom: 1px solid #f0dcdc;
+}
+
+th {
+  color: black;
 }
 
 @media (max-width: 900px) {
