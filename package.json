@@ -1,14 +1,13 @@
 {
   "name": "espoch-titulacion",
   "version": "1.0.0",
-  "description": "Sistema web institucional ESPOCH con SQL",
+  "description": "Sistema web institucional ESPOCH con PostgreSQL",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
   },
   "dependencies": {
     "express": "^4.22.1",
-    "mysql2": "^3.11.0",
     "pg": "^8.20.0"
   }
 }
