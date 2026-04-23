@@ -1,0 +1,291 @@
+.panel {
+  min-height: 100vh;
+  display: flex;
+}
+
+.content {
+  flex: 1;
+  padding: 38px;
+  background: #edf2f7;
+}
+
+.content h1 {
+  margin-bottom: 24px;
+  font-size: 24px;
+  color: #1f2a44;
+}
+
+.card {
+  background: var(--color-blanco);
+  border-radius: 18px;
+  padding: 24px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+  margin-bottom: 22px;
+}
+
+.dashboard-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.estado-badge {
+  background: #f3f4f6;
+  color: #444;
+  border-radius: 999px;
+  padding: 10px 16px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.estado-badge.azul {
+  background: #e5f0ff;
+  color: #2563eb;
+}
+
+.estado-badge.morado-suave {
+  background: #efe9ff;
+  color: #7c3aed;
+}
+
+.estado-badge.lila {
+  background: #f5e8ff;
+  color: #9333ea;
+}
+
+.separador {
+  margin: 20px 0;
+  border: none;
+  border-top: 1px solid #e7e7e7;
+}
+
+.acciones-box {
+  margin-top: 24px;
+  background: #fdf2f2;
+  padding: 22px;
+  border-radius: 16px;
+}
+
+.acciones-row {
+  margin-top: 14px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.input-doc {
+  padding: 12px 14px;
+  border: 1px solid #d6dce7;
+  border-radius: 10px;
+  font-size: 15px;
+  min-width: 220px;
+}
+
+.subir-btn {
+  background: var(--color-secundario);
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.subir-btn:hover {
+  background: var(--color-principal);
+}
+
+.fase-btn {
+  background: #16a34a;
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.fase-btn:hover {
+  background: #15803d;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 16px 12px;
+  text-align: left;
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  margin-bottom: 24px;
+}
+
+.mini-card {
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.azul-num {
+  color: #2563eb;
+}
+
+.naranja-num {
+  color: #f97316;
+}
+
+.morado-num {
+  color: #9333ea;
+}
+
+.verde-num {
+  color: #16a34a;
+}
+
+.director-grid {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 24px;
+}
+
+.director-card {
+  min-height: 180px;
+}
+
+.mini-proyecto-card {
+  margin-top: 18px;
+  padding: 22px;
+  border-radius: 18px;
+  background: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
+}
+
+.centro-vacio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #999;
+  border: 1px dashed #ddd;
+}
+
+.secretaria-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  gap: 16px;
+}
+
+.notificar-btn {
+  background: var(--color-secundario);
+  color: white;
+  border: none;
+  padding: 14px 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.notificar-btn:hover {
+  background: var(--color-principal);
+}
+
+.armar-btn {
+  background: #fee2e2;
+  color: var(--color-principal);
+  border: none;
+  padding: 12px 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.coordinador-subtitle {
+  margin-bottom: 24px;
+  color: #555;
+  font-size: 18px;
+}
+
+.coordinador-card-wrap {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.coordinador-card {
+  width: 320px;
+  border-top: 5px solid var(--color-secundario);
+}
+
+.ultima-accion-box {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  background: #f8f8f8;
+  padding: 18px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.sellar-btn {
+  background: linear-gradient(135deg, var(--color-principal), var(--color-secundario));
+  color: white;
+  border: none;
+  padding: 16px 18px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: bold;
+  width: 100%;
+}
+
+@media (max-width: 900px) {
+  .panel {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    min-height: auto;
+  }
+
+  .dashboard-header-row,
+  .secretaria-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cards-grid,
+  .director-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .coordinador-card {
+    width: 100%;
+  }
+}
+
+.logo-circle {
+  width: 82px;
+  height: 82px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  background: white;
+  border: 3px solid var(--color-principal);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}

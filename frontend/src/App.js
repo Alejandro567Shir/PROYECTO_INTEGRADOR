@@ -5,7 +5,9 @@ import DocenteDashboard from "./pages/DocenteDashboard";
 import DirectorDashboard from "./pages/DirectorDashboard";
 import SecretariaDashboard from "./pages/SecretariaDashboard";
 import CoordinadorDashboard from "./pages/CoordinadorDashboard";
-import "./App.css";
+import "./styles/sidebar.css";
+import "./styles/dashboard.css";
+
 
 function App() {
   const [usuarioLogueado, setUsuarioLogueado] = useState(null);

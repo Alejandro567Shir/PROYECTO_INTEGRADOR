@@ -1,6 +1,7 @@
 import { useState } from "react";
-import "../App.css";
+import "../styles/login.css";
 import { loginUsuario } from "../services/api";
+import logoEspoch from "../assets/images/logo_espoch.png";
 
 function Login({ onLoginExitoso }) {
   const [vista, setVista] = useState("roles");
@@ -55,7 +56,7 @@ function Login({ onLoginExitoso }) {
       <main className="login-page">
         <section className="login-card">
           <div className="logo-circle">
-            <span className="logo-icon">📖</span>
+            <img src={logoEspoch} alt="Logo ESPOCH" className="logo-img" />
           </div>
 
           <h1>SGT-ESPOCH Orellana</h1>
@@ -128,7 +129,7 @@ function Login({ onLoginExitoso }) {
     <main className="login-page">
       <section className="login-card">
         <div className="logo-circle">
-          <span className="logo-icon">📖</span>
+          <img src={logoEspoch} alt="Logo ESPOCH" className="logo-img" />
         </div>
 
         <h1>SGT-ESPOCH Orellana</h1>

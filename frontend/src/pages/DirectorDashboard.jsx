@@ -1,5 +1,5 @@
 import Sidebar from "../components/Sidebar";
-import "../App.css";
+import logoEspoch from "../assets/images/logo_espoch.png";
 
 function DirectorDashboard({ usuario, onCerrarSesion }) {
   return (
@@ -11,6 +11,10 @@ function DirectorDashboard({ usuario, onCerrarSesion }) {
       />
 
       <main className="content">
+        <div className="logo-circle">
+          <img src={logoEspoch} alt="Logo ESPOCH" className="logo-img" />
+        </div>
+
         <h1>Panel Director Titulación - Fase 2</h1>
 
         <div className="director-grid">
