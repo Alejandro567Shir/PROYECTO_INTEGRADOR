@@ -1,6 +1,5 @@
 import Sidebar from "../components/Sidebar";
 
-
 function SecretariaDashboard({ usuario, onCerrarSesion }) {
   return (
     <section className="panel">
@@ -8,6 +7,7 @@ function SecretariaDashboard({ usuario, onCerrarSesion }) {
         nombre={usuario.nombre}
         rolTexto="SECRETARIA"
         onCerrarSesion={onCerrarSesion}
+        onIrPanelPrincipal={() => window.scrollTo({ top: 0, behavior: "smooth" })}
       />
 
       <main className="content">
@@ -83,7 +83,9 @@ function SecretariaDashboard({ usuario, onCerrarSesion }) {
                   <span className="estado-badge lila">Validación Local</span>
                 </td>
                 <td>
-                  <button className="armar-btn">Armar Carpeta y Enviar a Riobamba</button>
+                  <button className="armar-btn">
+                    Armar Carpeta y Enviar a Riobamba
+                  </button>
                 </td>
               </tr>
             </tbody>

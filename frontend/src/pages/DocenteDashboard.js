@@ -8,6 +8,7 @@ function DocenteDashboard({ usuario, onCerrarSesion }) {
         nombre={usuario.nombre}
         rolTexto="DOCENTE F1"
         onCerrarSesion={onCerrarSesion}
+        onIrPanelPrincipal={() => window.scrollTo({ top: 0, behavior: "smooth" })}
       />
 
       <main className="content">

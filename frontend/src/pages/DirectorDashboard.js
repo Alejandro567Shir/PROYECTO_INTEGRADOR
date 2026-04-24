@@ -8,8 +8,8 @@ function DirectorDashboard({ usuario, onCerrarSesion }) {
         nombre={usuario.nombre}
         rolTexto="DIRECTOR F2"
         onCerrarSesion={onCerrarSesion}
+        onIrPanelPrincipal={() => window.scrollTo({ top: 0, behavior: "smooth" })}
       />
-
       <main className="content">
         <div className="logo-circle">
           <img src={logoEspoch} alt="Logo ESPOCH" className="logo-img" />

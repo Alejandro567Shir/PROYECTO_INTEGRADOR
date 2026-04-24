@@ -1,4 +1,4 @@
-function Sidebar({ nombre, rolTexto, onCerrarSesion }) {
+function Sidebar({ nombre, rolTexto, onCerrarSesion, onIrPanelPrincipal }) {
   return (
     <aside className="sidebar">
       <div className="brand">SGT ESPOCH</div>
@@ -8,7 +8,9 @@ function Sidebar({ nombre, rolTexto, onCerrarSesion }) {
         <span>{rolTexto}</span>
       </div>
 
-      <button className="menu-btn">Mi Panel Principal</button>
+      <button className="menu-btn" onClick={onIrPanelPrincipal}>
+        Mi Panel Principal
+      </button>
 
       <button className="logout-btn" onClick={onCerrarSesion}>
         Cerrar Sesión

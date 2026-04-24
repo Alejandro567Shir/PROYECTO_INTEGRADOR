@@ -8,6 +8,7 @@ function CoordinadorDashboard({ usuario, onCerrarSesion }) {
         nombre={usuario.nombre}
         rolTexto="COORDINADOR"
         onCerrarSesion={onCerrarSesion}
+        onIrPanelPrincipal={() => window.scrollTo({ top: 0, behavior: "smooth" })}
       />
 
       <main className="content">
